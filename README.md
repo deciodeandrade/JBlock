@@ -6,7 +6,7 @@ que ela possui em diferentes tipos de investimentos. O perfil de investimento de
 arrojado, logo ela possui dinheiro aplicado desde tesouro direto até ações na bolsa e ela
 também já conseguiu adquirir alguns imóveis que estão alugados.
 
-Descrição: Joana relatou que possui problemas para gerenciar e calcular o valor final das
+Joana relatou que possui problemas para gerenciar e calcular o valor final das
 compras realizadas em supermercado, por isso ela solicitou esse módulo de forma que ela
 pudesse a medida que fosse colocando as compras no carrinho ela pudesse adicionar os itens
 e ao final poder calcular o total da compra. Existe a possibilidade de um produto ter um valor
