@@ -33,9 +33,15 @@ article a{
 
 .nav-item.btn a:hover{
     color: #fff;
+    font-size: 67px;
 }
 
 article a:hover{
     background: #8844ee;
     color: #fff;
+}
+
+.titleButton{
+    color: #fff;
+    font-size: 20px;
 }
