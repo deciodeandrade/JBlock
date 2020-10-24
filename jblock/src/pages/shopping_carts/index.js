@@ -1,58 +1,19 @@
 import React, {Component} from "react";
-import api from "../../services/api";
+import api from '../../services/api';
 import {Link} from 'react-router-dom';
 
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
-} from 'reactstrap';
-
 import "./styles.css";
-
+import ListaProdutos from "./ListaProdutos";
 
 export default class ShoppingCarts extends Component{
-    state = {
-        carts: [],
-    }
-
-    componentDidMount() {
-        this.loadCarts();
-    }
-
-    loadCarts = async () => {
-        const response = await api.get(`/products`);
-        
-        this.setState( { carts: response.data.docs } );
-    }
-
 
     render(){
-        const {carts} = this.state;
-
-        return(
-            <div className="cart-in-use">
-                {carts.map(cart => (
-                    <article key={cart._id}>
-                        <strong>{cart.title}</strong>
-                        <p>{cart.description}</p>
-
-                        <a class="btn btn-lg icone" href="/shopping_carts/editar/1">
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pen" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                            </svg>
-                        </a>
-                    </article>
-                ))}
+        return (
+            <div className="product-list">
+                <div>
+                    <h1>Carrinho</h1>
+                </div>
+                <ListaProdutos />                    
             </div>
         );
     }
