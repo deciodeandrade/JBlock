@@ -29,7 +29,6 @@ export default class CategoriesNew extends Component{
                     <h1>Nova Categoria</h1>
                 </div>
                 <FormCategories />
-                <button type="submit" class="btn btn-primary">Criar Categoria</button>
                 <div id="idBack">
                     <a href="./" role="button" aria-pressed="true">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-return-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

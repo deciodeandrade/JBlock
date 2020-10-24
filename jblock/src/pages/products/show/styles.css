@@ -1,4 +1,4 @@
-#divCategoriesView{
+#divProductView{
     margin-top: 100px;
     margin-left: 100px;
 }
@@ -17,4 +17,8 @@
     margin-right: 10px;
     background: #8844ee;;
     color: #fff;
+}
+
+h1 {
+    color: black;
 }
