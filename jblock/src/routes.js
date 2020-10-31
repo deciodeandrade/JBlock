@@ -17,7 +17,7 @@ import People from './pages/people/index';
 import PeopleNew from './pages/people/new';
 import PeopleEdit from './pages/people/edit';
 import PersonView from './pages/people/show';
-import Reports from './pages/reports';
+import Reports from './pages/reports/index';
 import Main from './pages/main';
 import Product from './pages/product';
 
